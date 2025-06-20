@@ -1,0 +1,7 @@
+bucket_name: "my-unique-bucket-123456789"
+region: "us-east-1"
+
+bucket_list:
+      - my-bucket-coding4deep-001
+      - my-bucket-coding4deep-002
+      - my-bucket-coding4deep-003

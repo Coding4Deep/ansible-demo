@@ -1,0 +1,11 @@
+---
+- name: Create an S3 bucket
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  roles:
+    - s3-role 
+  vars_files:
+    - aws-cred.yaml
+
+

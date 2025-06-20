@@ -1,0 +1,8 @@
+- name: Create multiple S3 buckets
+  amazon.aws.s3_bucket:
+    name: "{{ item }}"
+    state: absent
+    region: "{{ region }}"
+    aws_access_key: "{{ aws_access_key }}"
+    aws_secret_key: "{{ aws_secret_key }}"
+  loop: "{{ bucket_list }}"
